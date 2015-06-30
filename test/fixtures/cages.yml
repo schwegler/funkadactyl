@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  capacity: 1
+  aasm_state: MyString
+
+two:
+  capacity: 1
+  aasm_state: MyString

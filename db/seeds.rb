@@ -1,7 +1,10 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+cages = Cage.create([{ capacity: 10 }, { capacity: 20 }, { capacity: 1 }])
+
+Species.create(name: 'Tyrannosaurus', diet: 'carnivore')
+Species.create(name: 'Velociraptor', diet: 'carnivore')
+Species.create(name: 'Spinosaurus', diet: 'carnivore')
+Species.create(name: 'Megalosaurus', diet: 'carnivore')
+Species.create(name: 'Brachiosaurus', diet: 'herbivore')
+Species.create(name: 'Stegosaurus', diet: 'herbivore')
+Species.create(name: 'Ankylosaurus', diet: 'herbivore')
+Species.create(name: 'Triceratops', diet: 'herbivore')

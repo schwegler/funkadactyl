@@ -8,18 +8,18 @@ Business Requirements
 
 It's 1993 and you're Dennis Nedry, the lead developer for the new Jurassic Park. The builders and developers need a system to keep track of the different cages around the park and the different dinosaurs in each one. You'll need to develop a JSON formatted RESTful API to allow the builders to create new cages, and add dinosaurs to the cages. It will also allow doctors and scientists the ability to edit/retrieve the statuses of dinosaurs and cages.
 
-* Cages must have a maximum capacity for how many dinosaurs it can hold.
-* Cages know how many dinosaurs are contained.
-* Cages have a power status of ACTIVE or DOWN.
-* Cages cannot be powered off if they contain dinosaurs.
-* Dinosaurs cannot be moved into a cage that is powered down.
-* Each dinosaur must have a name.
-* Each dinosaur must have a species (See enumerated list below, feel free to add others).
-* Each dinosaur is considered an herbivore or a carnivore, depending on its species.
-*	Herbivores cannot be in the same cage as carnivores.
-*	Carnivores can only be in a cage with other dinosaurs of the same species.
-* Must be able to query a listing of dinosaurs in a specific cage.
-* When querying dinosaurs or cages they should be filterable on their attributes (Cages on their power status and dinosaurs on species).
+* √ Cages must have a maximum capacity for how many dinosaurs it can hold.
+* √ Cages know how many dinosaurs are contained.
+* √ Cages have a power status of ACTIVE or DOWN.
+* √ Cages cannot be powered off if they contain dinosaurs.
+* √ Dinosaurs cannot be moved into a cage that is powered down.
+* √ Each dinosaur must have a name.
+* √ Each dinosaur must have a species (See enumerated list below, feel free to add others).
+* √ Each dinosaur is considered an herbivore or a carnivore, depending on its species.
+* √ Herbivores cannot be in the same cage as carnivores.
+* √ Carnivores can only be in a cage with other dinosaurs of the same species.
+* √ Must be able to query a listing of dinosaurs in a specific cage.
+* √ When querying dinosaurs or cages they should be filterable on their attributes (Cages on their power status and dinosaurs on species).
 
 All requests should be respond with the correct HTTP status codes and a response, if necessary, representing either the success or error conditions.
 
@@ -40,11 +40,11 @@ Sample Dinosaurs:
 Technical Requirements
 ----------------------
 
-This should be done with rails, rails-api, or sinatra (though we prefer rails/rails-api).
+√ This should be done with rails, rails-api, or sinatra (though we prefer rails/rails-api).
 
-Work should be done using version control, preferably git. We would like to see how you use version control.
+√ Work should be done using version control, preferably git. We would like to see how you use version control.
 
-You can assume only one instance of this application will run on a single threaded webserver.
+√ You can assume only one instance of this application will run on a single threaded webserver.
 
 The project should have automated tests that ensure the business logic implemented is correct.
 

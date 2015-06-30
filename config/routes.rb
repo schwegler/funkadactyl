@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :species
+  resources :dinos
+  resources :cages
+  get "cages/:id/power_down" => "cages#power_down"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
